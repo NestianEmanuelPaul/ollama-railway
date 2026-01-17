@@ -2,7 +2,8 @@ FROM ollama/ollama:latest
 
 EXPOSE 11434
 
-CMD ["sh", "-c", "ollama serve & sleep 5 && ollama pull phi3 && wait"]
+CMD ["ollama", "serve"]
+
 
 
 
